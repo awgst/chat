@@ -1,0 +1,163 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 97vh;
+}
+.container{
+	margin: auto;
+	border: 1px solid transparent;
+	background-color: #ACD8F0;
+	border-radius: 5px;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 10px;
+	padding-bottom: 0px;
+}
+.message-box{
+	width: 300px;
+	height: 350px;
+	border: 1px solid black;
+	margin: 10px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll;
+	padding-top: 5px;
+}
+form{
+	display: flex;
+	margin: 0 10px;
+	margin-bottom: 10px;
+}
+form input{
+	flex-grow: 1;
+	margin-right: 5px;
+	border-radius: 5px;
+	border: 1px solid transparent;
+}
+form button{
+	border:1px solid transparent;
+	border-radius: 100px;
+	width: 33px;
+	height: 33px;
+	background-color: green;
+	text-decoration: none;
+	border-color: transparent;
+	padding-left: 6px;
+}
+form button:hover{
+	background-color: transparent;
+	border-color: green;
+	cursor: pointer;
+}
+form button:hover i{
+	color: green;
+}
+i{
+	color: #fff; 
+	font-size: 15px;
+}
+h3{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+p{
+	margin-bottom: 0;
+}
+.mine, .other{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 10px;
+}
+.mine .chat, .other .chat{
+	background-color: green;
+	padding: 10px;
+	max-width: 77%;
+	text-align: left;
+	border: 1px solid green;
+	border-radius: 5px;
+	color: #fff;
+	word-wrap: break-word;
+	margin: 5px 0;
+}
+.other{
+	flex-direction: row-reverse;
+}
+.other .chat{
+	background-color: #242424;
+	border-color: #242424;
+}
+.chat p{
+	padding: 0;
+	margin: 0;
+}
+.chat p.timestamp{
+	text-align: right;
+	font-size: 10px;
+	margin-left: 60px;
+}
+#name-contact{
+	color: #14c514;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+/* Login Page */
+.daftar-button{
+	display: flex;
+	justify-content: center;
+}
+.form-login{
+	flex-wrap: wrap;
+}
+.form-login input{
+	width: 35%;
+}
+.remember{
+	display: flex;
+	width: auto;
+	justify-content: flex-start;
+}
+.remember p{
+	flex-grow: 1;
+}
+.remember input{
+	margin-top: 18px;
+	width: auto;
+}
+/* End of Login Page */
+
+/* Register Page */
+.form-register input{
+	margin: 5px 5px;
+	height: 40px;
+}
+.login-button{
+	margin: 0 20px;
+	margin-bottom: 15px;
+}
+.form-register p{
+	padding: 5px 0;
+	margin: 5px;
+	text-align: center;
+	background-color: green;
+	color: white;
+	border: 1px solid transparent;
+	border-radius: 5px;
+}
+.form-register input.register-btn{
+	background-color: green;
+	color: #fff;
+}
+.form-register input.register-btn:hover{
+	cursor: pointer;
+}
+/* End of Register Page */
